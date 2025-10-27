@@ -8,7 +8,7 @@ def client():
 
 def test_hello_world(client):
     res=client.get('/')
-    assert res.json=={"Hello":"Welcome to loan prediction system!!!"}
+    assert res.json=={"Message":"Hello Welcome to loan prediction system!!!"}
 
 def test_hello_ping(client):
     res=client.get('/ping')
